@@ -125,6 +125,59 @@ Promising packages with **no public repository found** — if you know the autho
 
 `bend-tensors` · `bend-blas-lapack` · `bend-parallel` · `bend-ml` (`0x53dde92d…`) · tinygrad-laws (`0xe6b82fa6…`) · the LAWS-spec package (`0x983079cc7642…`) · `wordlib` (`0xb13667d5…`) · `bolt` · `ezx` · `shake` · `snap` · `emerging-ezjson/eztoml/ezhttp/ezimg/ezaudio` · `mylsm-lsm-store` · `bend-csv-parser` · `bend-math-lib` · `bend-anthropic-sdk` · `bend-openai-sdk`
 
+## Ecosystem gaps
+
+What you'd expect in a healthy package ecosystem but won't find on BendHub yet — organized by the job you'd hire it for. Bend 2 is young, so read this as an opportunities list: most of these are one focused package away from existing. ★ marks the ones closest to [Tom's](https://github.com/lilalittle) active work (verified math, tensors, dev tooling).
+
+### Build & ship
+- **Start a new project** → no scaffolding: no `init` templates or example repos wired to `ez`
+- ★ **Format code** → no formatter — no `gofmt`/`black` equivalent anywhere on the hub
+- **Publish confidently** → `ezx` (the package manager) has no public repo or docs; the publish flow is tribal knowledge
+- **Lock dependencies** → no lockfile story, no audit/vulnerability tooling
+
+### Prove it's correct
+- ★ **Run tests** → no test runner or assertion library (`bend-kit-property` has generators + shrink, but nothing to run them)
+- ★ **Check laws before proving** → `lawcheck` (counterexample finder) lives in `bendlib/bendlib` but isn't published as a package
+- **Debug & profile** → no debugger, no profiler, no REPL/notebook story
+
+### Numbers & ML
+- ★ **Train a model** → autodiff exists only in GitHub-only `bendygrad`; no optimizer zoo (Adam/RMSprop), no data-loading/batching helpers, no model serialization format
+- **Do statistics** → no distributions, sampling, or hypothesis-testing package
+- ★ **Sparse / FFT / signal** → dense linear algebra only (`bend-tensors`); no sparse matrices, no FFT
+- **Plot results** → no charting or SVG generation
+
+### Data
+- **Read common formats** → no YAML, MessagePack, Parquet/Arrow, or PDF
+- **Wrangle tables** → no dataframe
+- **Validate schemas** → no JSON Schema / validation library
+
+### Web services
+- **Build an API** → servers exist (`bend-kit-http`, `ezhttp`); missing middleware, sessions, HTML templating, GraphQL, gRPC/protobuf
+- **Send email** → no SMTP client
+- **Run background jobs** → no queue/scheduler
+
+### Databases
+- **Evolve schema** → no migration tooling
+- **Query safely** → no query builder or typed query layer
+- **Use MySQL/Mongo** → no drivers (Postgres, SQLite, Redis are covered)
+
+### Apps & interfaces
+- **Build a TUI** → no terminal-UI library (no progress bars/spinners either)
+- **Build a GUI** → nothing
+- **Ship a game** → `jonlib` (graphics) + `ezaudio` exist; input, physics, and audio mixing are missing
+
+### Text & documents
+- **Go multilingual** → no i18n/l10n
+- **Search text** → no full-text search index
+
+### Operate in prod
+- **Deploy** → no container/CI helpers
+- **Watch it run** → logging (`notch`) + tracing (`bend-trace-context`) exist; no metrics (Prometheus-style) or alerting
+
+### Meta
+- **Publisher concentration** — one publisher (`paymog`) accounts for roughly half of all named packages: great velocity, real bus-factor risk
+- **Sourceless packages** — many of the most interesting packages (`bend-tensors`, `bolt`, `ezx`, `bend-ml`…) have no public repo: can't audit them, can't contribute, can't fully rely on them
+
 ---
 
 *Curated by [North](https://github.com/lilalittle) 🧭 — a weekly snapshot of the BendHub registry. New packages, version bumps, and newly found repos land here every Monday. Corrections welcome via issues.*

@@ -118,6 +118,7 @@ The humans (GitHub handles) behind the packages above — follow them if you wor
 - **[@FabianVegaA](https://github.com/FabianVegaA)** — `ber`, version-controlled data with certified merges
 - **[@777genius](https://github.com/777genius)** — `awesome-bend`, the curated ecosystem list
 - **[@phenomenon0](https://github.com/phenomenon0)** — `bend-u64`, 64-bit words in pure Bend
+- **[@subtleGradient](https://github.com/subtleGradient)** — `bend-over-sqlite` (SQLite for C and Wasm targets); collaborator on this repo
 
 ## Looking for source
 
@@ -129,9 +130,12 @@ Promising packages with **no public repository found** — if you know the autho
 
 What you'd expect in a healthy package ecosystem but won't find on BendHub yet — organized by the job you'd hire it for. Bend 2 is young, so read this as an opportunities list: most of these are one focused package away from existing. ★ marks the ones closest to [Tom's](https://github.com/lilalittle) active work (verified math, tensors, dev tooling).
 
+**Want to build one?** Every gap is a claimable issue with blocked-by relationships — see [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ### Build & ship
 - **Start a new project** → no scaffolding: no `init` templates or example repos wired to `ez`
 - ★ **Format code** → no formatter — no `gofmt`/`black` equivalent anywhere on the hub
+- **Edit comfortably** → no editor support: no Zed/VS Code extension, no tree-sitter grammar — `bolt` ships an LSP server with no client to talk to
 - **Publish confidently** → `ezx` (the package manager) has no public repo or docs; the publish flow is tribal knowledge
 - **Lock dependencies** → no lockfile story, no audit/vulnerability tooling
 
@@ -139,6 +143,7 @@ What you'd expect in a healthy package ecosystem but won't find on BendHub yet �
 - ★ **Run tests** → no test runner or assertion library (`bend-kit-property` has generators + shrink, but nothing to run them)
 - ★ **Check laws before proving** → `lawcheck` (counterexample finder) lives in `bendlib/bendlib` but isn't published as a package
 - **Debug & profile** → no debugger, no profiler, no REPL/notebook story
+- ★ **Build verified math** → no mathlib equivalent; expressivity gaps limit what pure math can even be stated (see issue #64)
 
 ### Numbers & ML
 - ★ **Train a model** → autodiff exists only in GitHub-only `bendygrad`; no optimizer zoo (Adam/RMSprop), no data-loading/batching helpers, no model serialization format

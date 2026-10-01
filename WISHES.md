@@ -89,13 +89,16 @@ done. No gap lives only in the README.
 **Check:** each README gap bullet resolves to an issue; no orphan bullets.
 
 ### W-BP-10 · invariant · active
-**Wish:** Every issue records its relationships in a *Blocked by / Unlocks /
-Builds on* section, **and** as GitHub-native blocked-by edges, which are
-the source of truth. Prose never overrides the edges.
-**Source:** Tom's process rules (north#8; chat 2026-10-01).
-**Check:** planning order derives from native edges; a prose claim without
-an edge is treated as unfiled. (As of 2026-10-01 relationships are prose
-only — migrating them to native edges is tracked work.)
+**Wish:** Issue relationships live **only** in GitHub-native blocked-by
+edges, which are the single source of truth. No *Blocked by / Unlocks /
+Builds on* prose sections — prose duplicates go stale, drift out of sync
+with the edges, and are unnecessary busy work. If a relationship matters,
+it is a blocked-by edge; if it doesn't, it isn't recorded.
+**Source:** Tom, chat 2026-10-01 ("avoid state that can become stale…
+rely on blocked by edge and NOT include blockers in prose").
+**Check:** planning order derives from native edges; issues carry no prose
+relationship sections. (As of 2026-10-01 relationships are prose-only —
+migrating them to native edges and deleting the prose is tracked work.)
 
 ### W-BP-11 · invariant · active
 **Wish:** Issue states mean what they say:
@@ -121,7 +124,7 @@ issues matches the unknown set in PACKAGE_REPOS.md.
 anytime), `help wanted` (needs a human), `question` (source-hunt or RFC),
 `documentation`.
 **Source:** established labeling (2026-09-30).
-**Check:** `good first issue` issues have no Blocked-by section; every leaf
+**Check:** `good first issue` issues have no blockers; every leaf
 gap carries the label.
 
 ### W-BP-14 · standing-duty · active

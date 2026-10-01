@@ -6,7 +6,7 @@ This repo is a contribution on-ramp for the Bend ecosystem. The gaps in the READ
 
 - **10 umbrella issues** (labeled `umbrella`), one per domain: [Build & ship](https://github.com/lilalittle/bend-packages/issues/1), [Prove it's correct](https://github.com/lilalittle/bend-packages/issues/2), [Numbers & ML](https://github.com/lilalittle/bend-packages/issues/3), [Data](https://github.com/lilalittle/bend-packages/issues/4), [Web services](https://github.com/lilalittle/bend-packages/issues/5), [Databases](https://github.com/lilalittle/bend-packages/issues/6), [Apps & interfaces](https://github.com/lilalittle/bend-packages/issues/7), [Text & documents](https://github.com/lilalittle/bend-packages/issues/8), [Operate in prod](https://github.com/lilalittle/bend-packages/issues/9), [Ecosystem health](https://github.com/lilalittle/bend-packages/issues/10).
 - **One issue per gap**: a job-to-be-done, what's already on the hub, a suggested approach, and a definition of done.
-- **Relationships**: every issue has a *Blocked by / Unlocks / Builds on* section. Some issues are leaves (build anytime); others form chains — e.g. the YAML parser builds on the existing `bend-kit-parse` parser combinators, and the formatter is blocked on the parser library.
+- **Relationships**: dependencies are GitHub-native blocked-by edges — the single source of truth. Don't duplicate them in prose sections; prose goes stale and drifts out of sync. Some issues are leaves (no blockers, build anytime); others form chains — e.g. the YAML parser builds on the existing `bend-kit-parse` parser combinators, and the formatter is blocked on the parser library.
 
 ## How to claim work
 

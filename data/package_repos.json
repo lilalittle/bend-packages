@@ -1,0 +1,354 @@
+{
+  "packages": {
+    "bend-kit-archive": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-bignum": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-bytes": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-cbor": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-collections": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-concurrency": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-crypto": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-csv": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-dns": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-encoding": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-files": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-fmt": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-hairpin": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-hash": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-http": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-http2": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-int": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-json": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-jwt": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-llm": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-multipart": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-netip": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-notch": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-oauth2": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-parse": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-postgres": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-process": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-property": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-random": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-redis": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-regex": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-router": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-sigv4": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-sqlite": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-stream": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-tar": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-time": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-tty": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-unicode": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-url": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-webhooks": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-websocket": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-wire": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-kit-zlib": {
+      "repo": "paymog/bend-kit",
+      "via": "hub"
+    },
+    "bend-net-bytes": {
+      "repo": "paymog/bend-net",
+      "via": "curated",
+      "note": "predecessor family of bend-kit-*"
+    },
+    "bend-net-encoding": {
+      "repo": "paymog/bend-net",
+      "via": "curated",
+      "note": "predecessor family of bend-kit-*"
+    },
+    "bend-net-json": {
+      "repo": "paymog/bend-net",
+      "via": "curated",
+      "note": "predecessor family of bend-kit-*"
+    },
+    "bend-net-url": {
+      "repo": "paymog/bend-net",
+      "via": "curated",
+      "note": "predecessor family of bend-kit-*"
+    },
+    "bend-net-wire": {
+      "repo": "paymog/bend-net",
+      "via": "curated",
+      "note": "predecessor family of bend-kit-*"
+    },
+    "bend-mathlib": {
+      "repo": "bendlib/bendlib",
+      "via": "curated",
+      "note": "231 machine-checked lemmas; also ships lawcheck"
+    },
+    "bendlib-kernel-list": {
+      "repo": "bendlib/bendlib",
+      "via": "curated"
+    },
+    "bend-collections": {
+      "repo": "Giulio2002/bend-collections",
+      "via": "curated",
+      "note": "verified containers + SHA-256"
+    },
+    "bend-collections-laws": {
+      "repo": "Giulio2002/bend-collections",
+      "via": "curated"
+    },
+    "bend-collections-laws-containers": {
+      "repo": "Giulio2002/bend-collections",
+      "via": "curated"
+    },
+    "bend-collections-laws-crypto": {
+      "repo": "Giulio2002/bend-collections",
+      "via": "curated"
+    },
+    "bend-collections-laws-math": {
+      "repo": "Giulio2002/bend-collections",
+      "via": "curated"
+    },
+    "bend-trace-context": {
+      "repo": "LucasGois1/bend-trace-context",
+      "via": "hub"
+    },
+    "ber-core-store": {
+      "repo": "FabianVegaA/ber",
+      "via": "curated",
+      "note": "version-controlled data, certified merges"
+    },
+    "near-architecture": {
+      "repo": "PedroAVJ/n",
+      "via": "curated"
+    },
+    "near-v-framework": {
+      "repo": "PedroAVJ/n",
+      "via": "curated",
+      "note": "\"V\" framework"
+    },
+    "bend-over-sqlite": {
+      "repo": "subtleGradient/bend-over",
+      "via": "curated",
+      "note": "packages/sqlite \u2014 SQLite for C and Wasm"
+    },
+    "bend-over-js-eval": {
+      "repo": "subtleGradient/bend-over",
+      "via": "curated",
+      "note": "packages/js-eval"
+    },
+    "bend-anthropic-sdk": {
+      "repo": null
+    },
+    "bend-blas-lapack": {
+      "repo": null
+    },
+    "bend-csv-parser": {
+      "repo": null
+    },
+    "bend-datetime": {
+      "repo": null
+    },
+    "bend-encoding": {
+      "repo": null
+    },
+    "bend-lawful-stdlib": {
+      "repo": null
+    },
+    "bend-math-lib": {
+      "repo": null
+    },
+    "bend-openai-sdk": {
+      "repo": null
+    },
+    "bend-parallel": {
+      "repo": null
+    },
+    "bend-scanner": {
+      "repo": null
+    },
+    "bend-tensors": {
+      "repo": null
+    },
+    "bolt": {
+      "repo": null
+    },
+    "emerging-ezaudio": {
+      "repo": null
+    },
+    "emerging-ezhttp": {
+      "repo": null
+    },
+    "emerging-ezimg": {
+      "repo": null
+    },
+    "emerging-ezjson": {
+      "repo": null
+    },
+    "emerging-eztoml": {
+      "repo": null
+    },
+    "ezx": {
+      "repo": null
+    },
+    "mylsm-lsm-store": {
+      "repo": null
+    },
+    "near-n-checker": {
+      "repo": null
+    },
+    "shake": {
+      "repo": null
+    },
+    "snap": {
+      "repo": null
+    },
+    "unified-nsga-iii": {
+      "repo": null
+    }
+  },
+  "github_only": {
+    "bendygrad": {
+      "repo": "KapioKai/bendygrad",
+      "note": "tinygrad front-end in Bend 2: views, buffers, autodiff, SGD"
+    },
+    "jonlib": {
+      "repo": "jonathanperis/jonlib",
+      "note": "graphics/game library, raylib parity goal"
+    },
+    "bend-u64": {
+      "repo": "phenomenon0/bend-u64",
+      "note": "64-bit unsigned ints in pure Bend, checked commutation law"
+    },
+    "stiff": {
+      "repo": "fraylabs/stiff",
+      "note": "experimental HTTP/routing/streaming/SQLite for Bend 2"
+    },
+    "awesome-bend": {
+      "repo": "777genius/awesome-bend",
+      "note": "community-curated list (not a package)"
+    }
+  }
+}

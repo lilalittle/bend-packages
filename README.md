@@ -2,7 +2,7 @@
 
 A curated, regularly refreshed overview of [BendHub](https://hub.bend-lang.com) — the package registry for [Bend 2](https://github.com/bendlang/bend), the massively-parallel language with machine-checked proofs.
 
-> **Snapshot: 2026-10-26** · **889 packages** — 179 named, 280 hash-only · refreshed weekly.
+> **Snapshot: 2026-11-02** · **1036 packages** — 201 named, 282 hash-only · refreshed weekly.
 > The [full A–Z list](ALL_PACKAGES.md) is generated from the registry API each refresh.
 
 ## Using these packages
@@ -31,7 +31,7 @@ Bend 2's killer feature is machine-checked proofs: `law` states a proposition, a
 
 | Package | What | Links |
 |---|---|---|
-| [bend-mathlib](https://hub.bend-lang.com/n/bend-mathlib) `@0.7.5.0` | 231 machine-checked lemmas (Nat, Bool, List, String, Maybe, equality, order, algebra, permutations, sorting) — zero `@unsafe` | [repo](https://github.com/bendlib/bendlib) · `import bend-mathlib@0.7.5.0/nat.bend as MNat` |
+| [bend-mathlib](https://hub.bend-lang.com/n/bend-mathlib) `@0.8.1.0` | 231 machine-checked lemmas (Nat, Bool, List, String, Maybe, equality, order, algebra, permutations, sorting, machine words) — zero `@unsafe` | [repo](https://github.com/bendlib/bendlib) · `import bend-mathlib@0.8.1.0/nat.bend as MNat` |
 | [bend-ml-nat-lemmas](https://hub.bend-lang.com/n/bend-ml-nat-lemmas) `@0.1.1.0` | Proved Nat/List lemmas that Bend's Base doesn't ship — complements bend-mathlib | [repo](https://github.com/nuxyel/bend-ml) · `import bend-ml-nat-lemmas@0.1.1.0/main.bend` |
 | [bend-schema-lib](https://hub.bend-lang.com/n/bend-schema-lib) `@0.1.0.0` | Schema validation library | `import bend-schema-lib@0.1.0.0/core.bend` · ⚠️ no public repo found yet |
 | [qasim-bend-kit](https://hub.bend-lang.com/n/qasim-bend-kit) `@0.1.0.2` | JSON library with correctness laws and machine-checked proofs | ⚠️ no public repo found yet |
@@ -42,6 +42,7 @@ Bend 2's killer feature is machine-checked proofs: `law` states a proposition, a
 | [bend-trace-context](https://hub.bend-lang.com/n/bend-trace-context) `@0.2.0.0` | W3C Trace Context propagation, rules proved as laws | [repo](https://github.com/LucasGois1/bend-trace-context) |
 | [bend-lawful-stdlib](https://hub.bend-lang.com/n/bend-lawful-stdlib) `@0.1.0.0` | Typeclass-style Ord / Semigroup / Group with their laws | `import bend-lawful-stdlib@0.1.0.0/src/class.bend` |
 | [wordlib](https://hub.bend-lang.com/0xb13667d52aa56e002b4d09883d7fce3e/word.bend) | Laws about Base's fixed-width words, with `LAWS.bend`/`PROOF.bend` | `import 0xb13667d52aa56e002b4d09883d7fce3e/word.bend` |
+| [lawful-words](https://hub.bend-lang.com/n/lawful-words) `@0.1.0.0` · [lawful-arrays](https://hub.bend-lang.com/n/lawful-arrays) `@0.1.0.0` · [lawful-bytes](https://hub.bend-lang.com/n/lawful-bytes) `@0.1.1.0` · [lawful-fields](https://hub.bend-lang.com/n/lawful-fields) `@0.1.1.0` · [lawful-halves](https://hub.bend-lang.com/n/lawful-halves) `@0.1.0.0` | **New — a law-and-proof family**: U32↔Nat arithmetic, Array operations via leaf lists, packed-byte buffers, byte-field splitting, balanced fork-join trees — all with `LAWS.bend`/`PROOF.bend` | [repos](https://github.com/luiscleto/lawful-words) (words, arrays verified; same author family) · `import lawful-words@0.1.0.0/defs.bend` |
 
 The `bendlib` repo also ships [**lawcheck**](https://github.com/bendlib/bendlib) — finds counterexamples to your laws *before* you try to prove them.
 
@@ -50,12 +51,12 @@ The `bendlib` repo also ships [**lawcheck**](https://github.com/bendlib/bendlib)
 | Package | What | Links |
 |---|---|---|
 | [bend-ml-tensor](https://hub.bend-lang.com/n/bend-ml-tensor) `@0.1.2.0` | **Tensors with the shape in the TYPE** — "a shape error is a type error" | [repo](https://github.com/nuxyel/bend-ml) · `import bend-ml-tensor@0.1.2.0/tensor.bend` |
-| [bend-ml-tensor-array](https://hub.bend-lang.com/n/bend-ml-tensor-array) `@0.1.16.0` | Tensors over a flat Array, shape in the type (still very actively developed) | [repo](https://github.com/nuxyel/bend-ml) · `import bend-ml-tensor-array@0.1.16.0/main.bend` |
+| [bend-ml-tensor-array](https://hub.bend-lang.com/n/bend-ml-tensor-array) `@0.1.19.0` | Tensors over a flat Array, shape in the type (still very actively developed) | [repo](https://github.com/nuxyel/bend-ml) · `import bend-ml-tensor-array@0.1.19.0/main.bend` |
 | [bendtorch-core](https://hub.bend-lang.com/n/bendtorch-core) `@0.1.0.0` | PyTorch-like tensor library in Bend: F32 tensors, matmul, autograd tape, losses, SGD — laws and proofs throughout (~180 files) | [repo](https://github.com/aaaxn/bendtorch) · `import bendtorch-core@0.1.0.0/src/tensor/core.bend` |
-| [bendtorch](https://hub.bend-lang.com/n/bendtorch) `@1.1.1.0` (+ [bendtorch-fast](https://hub.bend-lang.com/n/bendtorch-fast), [bendtorch-gpu](https://hub.bend-lang.com/n/bendtorch-gpu), [bendtorch-load](https://hub.bend-lang.com/n/bendtorch-load)) | **New — the bendtorch project restructured as named entry points**: same layers, types and bits — over bend-ml-tensor-fork (fast), bend-ml-tensor-gpu (GPU), or loading-only (binary-read is foreign C/JS, imported by no law file) | [repo](https://github.com/aaaxn/bendtorch) · `import bendtorch@1.1.1.0/tensor.bend` |
-| [mlbend-*](https://hub.bend-lang.com/n/mlbend-datasets) `@0.1.x` | **New — a sklearn-shaped ML stack in one week**: `mlbend-datasets@0.1.6.0` (sklearn's datasets) · `mlbend-huggingface@0.1.1.0` (HF client) · `mlbend-cluster@0.1.0.0` (functional k-means) · `mlbend-metrics@0.1.0.0` (evaluation) · `mlbend-pipeline@0.1.0.0` · `mlbend-preprocess@0.1.0.0` (sklearn transformers over bend-ml's matrix) · `mlbend-select@0.1.0.0` (k-fold CV) · `mlbend-split@0.1.1.0` (seeded stratified split) | ⚠️ no public repo found yet · `import mlbend-datasets@0.1.6.0/main.bend` |
-| [bend-ml-tensor-gpu](https://hub.bend-lang.com/n/bend-ml-tensor-gpu) `@0.1.2.1` · [bend-ml-tensor-fork](https://hub.bend-lang.com/n/bend-ml-tensor-fork) `@0.1.2.0` | **New** — tensor-array's products on the GPU; parallel blocks sharing operands (`par1`..`par4`) | [repo](https://github.com/nuxyel/bend-ml) |
-| [bend-ml-llama](https://hub.bend-lang.com/n/bend-ml-llama) `@0.1.1.0` · [bend-ml-binary-read](https://hub.bend-lang.com/n/bend-ml-binary-read) `@0.1.0.0` | **New** — Llama-architecture LMs (SmolLM2 family) in Bend 2; little-endian F32 weight loading | [repo](https://github.com/nuxyel/bend-ml) |
+| [bendtorch](https://hub.bend-lang.com/n/bendtorch) `@1.3.0.0` (+ [bendtorch-fast](https://hub.bend-lang.com/n/bendtorch-fast), [bendtorch-gpu](https://hub.bend-lang.com/n/bendtorch-gpu), [bendtorch-load](https://hub.bend-lang.com/n/bendtorch-load)) | **New — the bendtorch project restructured as named entry points**: same layers, types and bits — over bend-ml-tensor-fork (fast), bend-ml-tensor-gpu (GPU), or loading-only (binary-read is foreign C/JS, imported by no law file); whole family now at 1.3.0.0 | [repo](https://github.com/aaaxn/bendtorch) · `import bendtorch@1.3.0.0/tensor.bend` |
+| [mlbend-*](https://hub.bend-lang.com/n/mlbend-datasets) `@0.1.x` | **New — a sklearn-shaped ML stack in one week**: `mlbend-datasets@0.1.6.0` (sklearn's datasets) · `mlbend-huggingface@0.1.1.0` (HF client) · `mlbend-cluster@0.1.0.0` (functional k-means) · `mlbend-metrics@0.1.0.0` (evaluation) · `mlbend-pipeline@0.1.0.0` · `mlbend-preprocess@0.1.0.0` (sklearn transformers over bend-ml's matrix) · `mlbend-select@0.1.0.0` (k-fold CV) · `mlbend-split@0.1.1.0` (seeded stratified split) · **now also** `mlbend-generative@0.1.1.0` (generative skeleton) · `mlbend-report@0.1.0.0` (confusion matrix, per-class report) | ⚠️ no public repo found yet · `import mlbend-datasets@0.1.6.0/main.bend` |
+| [bend-ml-tensor-gpu](https://hub.bend-lang.com/n/bend-ml-tensor-gpu) `@0.1.5.1` · [bend-ml-tensor-fork](https://hub.bend-lang.com/n/bend-ml-tensor-fork) `@0.1.6.0` | **New** — tensor-array's products on the GPU; parallel blocks sharing operands (`par1`..`par4`) | [repo](https://github.com/nuxyel/bend-ml) |
+| [bend-ml-llama](https://hub.bend-lang.com/n/bend-ml-llama) `@0.2.1.0` · [bend-ml-binary-read](https://hub.bend-lang.com/n/bend-ml-binary-read) `@0.2.0.0` | **New** — Llama-architecture LMs (SmolLM2 family) in Bend 2; little-endian F32 weight loading | [repo](https://github.com/nuxyel/bend-ml) |
 | [bend-ml-autograd](https://hub.bend-lang.com/n/bend-ml-autograd) `@0.1.1.0` | Automatic differentiation **with a proved law** | [repo](https://github.com/nuxyel/bend-ml) · `import bend-ml-autograd@0.1.1.0/autograd.bend` |
 | [bend-ml-bpe-tokenizer](https://hub.bend-lang.com/n/bend-ml-bpe-tokenizer) `@0.1.3.0` | Byte-level BPE tokenizer with proved roundtrip | [repo](https://github.com/nuxyel/bend-ml) · `import bend-ml-bpe-tokenizer@0.1.3.0/bpe.bend` |
 | [bend-tensors](https://hub.bend-lang.com/n/bend-tensors) `@0.0.0.2` | Dense linear algebra with **shapes in the types** (MIT) | `import bend-tensors@0.0.0.2/bend_tensors.bend` · ⚠️ no public repo found yet |
@@ -72,40 +73,43 @@ The `bendlib` repo also ships [**lawcheck**](https://github.com/bendlib/bendlib)
 |---|---|---|
 | [bend-parallel](https://hub.bend-lang.com/n/bend-parallel) `@0.1.0.0` | Parallel histogram, scan, sort (Apache-2.0) | `import bend-parallel@0.1.0.0/histogram.bend` |
 | [bend-kit-concurrency](https://hub.bend-lang.com/n/bend-kit-concurrency) `@0.2.0.0` | Parallel map/reduce, worker pool, channel select, timeouts | `import bend-kit-concurrency@0.2.0.0/concurrency.bend` |
-| [mylsm-lsm-store](https://hub.bend-lang.com/n/mylsm-lsm-store) `@0.5.0.0` | A **full LSM-tree storage engine in pure Bend** — memtable, WAL, SST files, merge iterators, crash-point testing (BSD-3-Clause) | `import mylsm-lsm-store@0.5.0.0/mylsm.bend` |
+| [mylsm-lsm-store](https://hub.bend-lang.com/n/mylsm-lsm-store) `@0.6.0.1` | A **full LSM-tree storage engine in pure Bend** — memtable, WAL, SST files, merge iterators, crash-point testing (BSD-3-Clause) | `import mylsm-lsm-store@0.6.0.1/mylsm.bend` |
 | [ber-core-store](https://hub.bend-lang.com/n/ber-core-store) `@0.1.2.0` | Content-addressed / Merkle state-tree store with certified merges (BSD-3-Clause) | [repo](https://github.com/FabianVegaA/ber) |
 | [bend-kit-sqlite](https://hub.bend-lang.com/n/bend-kit-sqlite) `@0.1.0.0` | Prepared SQLite statements through libsqlite3 | `import bend-kit-sqlite@0.1.0.0/sqlite.bend` |
-| [bend-kit-postgres](https://hub.bend-lang.com/n/bend-kit-postgres) `@0.2.0.0` / [bend-kit-redis](https://hub.bend-lang.com/n/bend-kit-redis) `@0.2.0.0` | Postgres protocol 3.0 + SCRAM; Redis/Valkey RESP3 client with pipelining | via [bend-kit](https://github.com/paymog/bend-kit) |
-| [bend-kit-runner](https://hub.bend-lang.com/n/bend-kit-runner) `@0.10.0.1` | Durable job runner: journaled scheduler queue, bounded resource pool, retry + breaker per target — **closes the "run background jobs" gap** | via [bend-kit](https://github.com/paymog/bend-kit) · `import bend-kit-runner@0.10.0.1/runner.bend` |
-| [bend-kit-commands](https://hub.bend-lang.com/n/bend-kit-commands) `@0.4.0.0` / [bend-kit-gateway](https://hub.bend-lang.com/n/bend-kit-gateway) `@0.2.0.0` | Retry-safe commands (SQLite-transactional outbox); guarded read-through gateway (authorize, cache, fetch on miss) | via [bend-kit](https://github.com/paymog/bend-kit) |
+| [bend-kit-postgres](https://hub.bend-lang.com/n/bend-kit-postgres) `@0.3.0.0` / [bend-kit-redis](https://hub.bend-lang.com/n/bend-kit-redis) `@0.3.0.0` | Postgres protocol 3.0 + SCRAM; Redis/Valkey RESP3 client with pipelining | via [bend-kit](https://github.com/paymog/bend-kit) |
+| [bend-kit-runner](https://hub.bend-lang.com/n/bend-kit-runner) `@0.13.1.0` | Durable job runner: journaled scheduler queue, bounded resource pool, retry + breaker per target — **closes the "run background jobs" gap** | via [bend-kit](https://github.com/paymog/bend-kit) · `import bend-kit-runner@0.13.1.0/runner.bend` |
+| [bend-kit-commands](https://hub.bend-lang.com/n/bend-kit-commands) `@0.4.0.0` / [bend-kit-gateway](https://hub.bend-lang.com/n/bend-kit-gateway) `@0.3.0.0` | Retry-safe commands (SQLite-transactional outbox); guarded read-through gateway (authorize, cache, fetch on miss) | via [bend-kit](https://github.com/paymog/bend-kit) |
 | [bend-visgraph](https://hub.bend-lang.com/n/bend-visgraph) `@2.0.0.0` | **New** — ts2vg's visibility graphs of time series, in Bend 2, "on every CPU thread" | ⚠️ no public repo found yet · `import bend-visgraph@2.0.0.0/bend_visgraph.bend` |
-| [bend-kit-crdt](https://hub.bend-lang.com/n/bend-kit-crdt) `@0.1.1.0` / [bend-kit-migrate](https://hub.bend-lang.com/n/bend-kit-migrate) `@0.2.0.0` | **New** — replicated data types (grow-only counters with proved merges); versioned subscription records (validated JSON decode, proved migrations, encode) | via [bend-kit](https://github.com/paymog/bend-kit) |
+| [bend-kit-crdt](https://hub.bend-lang.com/n/bend-kit-crdt) `@0.2.0.0` / [bend-kit-migrate](https://hub.bend-lang.com/n/bend-kit-migrate) `@0.3.0.0` | **New** — replicated data types (grow-only counters with proved merges); versioned subscription records (validated JSON decode, proved migrations, encode) | via [bend-kit](https://github.com/paymog/bend-kit) |
+| [bend-kube-runtime](https://hub.bend-lang.com/n/bend-kube-runtime) `@0.2.0.0` | **New — a Kubernetes runtime in Bend**: client, config, leader election, leases, watchers, queues, proxy, serve, store, typed resources, YAML — with `LAWS.bend`/`PROOF.bend` | ⚠️ no public repo found yet · `import bend-kube-runtime@0.2.0.0/package.bend` |
 
 ### Dev tooling
 
 | Package | What | Links |
 |---|---|---|
-| [bolt](https://hub.bend-lang.com/n/bolt) `@1.19.0.0` | Linter, checker **and language server** for Bend 2 (~40 lint rules) | `import bolt@1.19.0.0/main.bend` · ⚠️ no public repo found yet |
+| [bolt](https://hub.bend-lang.com/n/bolt) `@1.27.0.0` | Linter, checker **and language server** for Bend 2 (~40 lint rules) | `import bolt@1.27.0.0/main.bend` · ⚠️ no public repo found yet |
+| [ezmcp](https://hub.bend-lang.com/n/ezmcp) `@0.1.0.0` | **New — MCP servers and clients for Bend 2**: tool servers over stdio or stateless Streamable HTTP, client for stateless HTTP endpoints; JSON-RPC initialize/ping/tools-list/tools-call | [repo](https://github.com/Emerging-Patterns/ezmcp) · `import ezmcp@0.1.0.0/main.bend` |
+| [yaml-for-bend](https://hub.bend-lang.com/n/yaml-for-bend) `@0.1.1.0` | **New — YAML for Bend**: read YAML text into values, write values back as YAML | ⚠️ no public repo found yet · `import yaml-for-bend@0.1.1.0/yaml.bend` |
 | [ezx](https://hub.bend-lang.com/n/ezx) `@1.13.0.0` | `ez`, the package manager for Bend 2 | ⚠️ no public repo found yet |
 | [shake](https://hub.bend-lang.com/n/shake) `@0.8.0.0` | Proven CLI argument parser with subcommands and help | ⚠️ no public repo found yet |
 | [snap](https://hub.bend-lang.com/n/snap) `@1.5.0.0` | Run programs from Bend 2 with argv as a string list, no shell | ⚠️ no public repo found yet |
-| [bend-lint-api](https://hub.bend-lang.com/n/bend-lint-api) `@0.2.0.0` + [bend-lint-rules](https://hub.bend-lang.com/n/bend-lint-rules) `@0.2.0.0` | Lint-rule framework for Bend (`rule()`) plus ~40 rules: language, layout, performance, suspicious patterns | ⚠️ no public repo found yet |
+| [bend-lint-api](https://hub.bend-lang.com/n/bend-lint-api) `@0.2.2.0` + [bend-lint-rules](https://hub.bend-lang.com/n/bend-lint-rules) `@0.2.2.0` | Lint-rule framework for Bend (`rule()`) plus ~40 rules: language, layout, performance, suspicious patterns | ⚠️ no public repo found yet |
 | [bend-lint-pack](https://hub.bend-lang.com/n/bend-lint-pack) `@0.1.1.0` | **New** — BendHub entry publishing all five lint rules + helpers (complexity, dead defs, graph fan-in/fan-out) | ⚠️ no public repo found yet · `import bend-lint-pack@0.1.1.0/all.bend` |
 | [bend-semver-checks](https://hub.bend-lang.com/n/bend-semver-checks) `@0.1.0.0` / [bend-toon-codec](https://hub.bend-lang.com/n/bend-toon-codec) `@0.1.0.0` | **New** — semver diff/law/text checks; TOON codec (decode/encode/frame/json/num/text) — same GPL publisher family as bend-lint-pack, no repo found | ⚠️ no public repo found yet |
-| [bend-kit-property](https://hub.bend-lang.com/n/bend-kit-property) `@0.3.0.0` | **Updated** — reproducible property checks with generated inputs and greedy shrinking (was generators-only) | via [bend-kit](https://github.com/paymog/bend-kit) |
+| [bend-kit-property](https://hub.bend-lang.com/n/bend-kit-property) `@0.4.0.0` | **Updated** — reproducible property checks with generated inputs and greedy shrinking (was generators-only) | via [bend-kit](https://github.com/paymog/bend-kit) |
 | [bendcheck](https://hub.bend-lang.com/0x738b30530890e825e0ab81092b94cbfc/check.bend) | **New** — "property-based testing for Bend" (`check.bend`) | `import 0x738b30530890e825e0ab81092b94cbfc/check.bend` · ⚠️ no public repo found yet |
 
 ### The `bend-kit` standard library
 
-The most-depended-on packages on the hub (`bend-kit-bytes` has 99 dependents). Actively versioned monorepo — [paymog/bend-kit](https://github.com/paymog/bend-kit). Import per package, e.g. `import bend-kit-http@0.36.0.0/http.bend`:
+The most-depended-on packages on the hub (`bend-kit-bytes` has 99 dependents). Actively versioned monorepo — [paymog/bend-kit](https://github.com/paymog/bend-kit). Import per package, e.g. `import bend-kit-http@0.38.2.0/http.bend`:
 
-`bytes` · `json` · `encoding` · `url` · `wire` (TCP/UDP/TLS) · `http` (HTTP/1.1+2 client, HTTP/1.1 server) · `http2` (HPACK) · `camber` (fixed prepared HTTP apps) · `hairpin` (HTTP client: pool, cookies, mTLS, retries) · `crypto` (OpenSSL 3: hashes, HMAC, HKDF, RSA/ECDSA) · `regex` (RE2 syntax, Pike VM, linear time) · `collections` (maps, vector, deque, priority queue) · `parse` (parser combinators) · `time` · `zlib` · `dns` · `files` · `fmt` · `int` (U8–I64) · `f64` (IEEE 754 binary64) · `bignum` (bigint/decimal/rational) · `hash` (FNV-1a, xxHash, SipHash) · `property` (reproducible property checks + greedy shrinking) · `notch` (structured logging) · `jwt` · `oauth2` · `sigv4` (AWS) · `multipart` · `netip` · `websocket` · `webhooks` · `router` · `tar` · `archive` (ZIP) · `cbor` · `csv` · `tty` · `unicode` (UCD 17.0.0) · `stream` · `process` · `sqlite` · `postgres` · `redis` · `llm` (Anthropic + OpenAI, SSE streaming) · `authz` · `cache` · `journal` · `lemmas` (proved Word/U32↔Nat laws) · `protobuf` · `resources` · `retry` · `scheduler` · `runner` (durable job runner) · `commands` (retry-safe commands) · `gateway` (guarded read-through gateway) · `crdt` (proved grow-only counters — new) · `migrate` (proved migrations — new)
+`bytes` · `json` · `encoding` · `url` · `wire` (TCP/UDP/TLS) · `http` (HTTP/1.1+2 client, HTTP/1.1 server) · `http2` (HPACK) · `camber` (fixed prepared HTTP apps) · `hairpin` (HTTP client: pool, cookies, mTLS, retries) · `crypto` (OpenSSL 3: hashes, HMAC, HKDF, RSA/ECDSA) · `regex` (RE2 syntax, Pike VM, linear time) · `collections` (maps, vector, deque, priority queue) · `parse` (parser combinators) · `time` · `zlib` · `dns` · `files` · `fmt` · `int` (U8–I64) · `f64` (IEEE 754 binary64) · `bignum` (bigint/decimal/rational) · `hash` (FNV-1a, xxHash, SipHash) · `property` (reproducible property checks + greedy shrinking) · `notch` (structured logging) · `jwt` · `oauth2` · `sigv4` (AWS) · `multipart` · `netip` · `websocket` · `webhooks` · `router` · `tar` · `archive` (ZIP) · `cbor` · `csv` · `tty` · `unicode` (UCD 17.0.0) · `stream` · `process` · `sqlite` · `postgres` · `redis` · `llm` (Anthropic + OpenAI, SSE streaming) · `authz` · `cache` · `journal` · `lemmas` (proved Word/U32↔Nat laws) · `protobuf` · `resources` · `retry` · `scheduler` · `runner` (durable job runner) · `commands` (retry-safe commands) · `gateway` (guarded read-through gateway) · `crdt` (proved grow-only counters) · `migrate` (proved migrations) · `bits` (bit readers/writers, Huffman tables — new)
 
 ### Polished small families
 
-- [**emerging-ez\***](https://hub.bend-lang.com/n/emerging-ezjson) (all MIT, all with top-level LICENSE): `ezjson` (parser/printer/pull cursor) · `eztoml` (proven parser/renderer) · `ezhttp` (client+server, auth/cookies/CORS) · `ezimg` (PNG + baseline JPEG) · `ezaudio` (WAV + MP3)
-- [**gralha-\***](https://hub.bend-lang.com/n/gralha-text-scan) (all MIT): `text-scan` · `bytes` · `byte-words` · `deflate` · `gzip-frame` (now named) · `crc32` · `image` · `png-decode` · `jpeg-decode` · `css-style` · `xml-doc` · `ustar` · `truetype` · `coverage` · `bendquest` (proof-carrying game-rules kernel) · `raylib` · `http-core` · `http-server` · `svg-render` (new this week) — [repo](https://github.com/nicolas-abril/bend2-libs)
-- [**bend-osdev-\***](https://hub.bend-lang.com/n/bend-osdev-word64) (all MIT, all ship `LAWS.bend`/`PROOF.bend`): `word64` · `bytes` · `caps` · `apparmor` · `acpi` · `bpf` · `aead` · `aes` · `algo` · `array` · `cbc` · `cipher-modes` · `crc` · `crypto` · `gf` · `hashes` · `legacy-ciphers` · `mode-core` · `pkcs7` · `u32` (new this week) — OS-dev in Bend with machine-checked laws — [repo](https://github.com/ScottMoore0/bend-osdev)
+- [**ez\***](https://hub.bend-lang.com/n/ezjson) (all MIT, all with top-level LICENSE): `ezjson` (parser/printer/pull cursor) · `eztoml` (proven parser/renderer) · `ezhttp` (client+server, auth/cookies/CORS) · `ezimg` (PNG + baseline JPEG) · `ezaudio` (WAV + MP3) · **new:** `ezmcp` (MCP servers/clients — [repo](https://github.com/Emerging-Patterns/ezmcp)) · `ezsys` (whole-file reads, atomic saves). Note: `ezjson`/`ezhttp` graduated from the `emerging-` prefix this week (same content hashes, new short names).
+- [**gralha-\***](https://hub.bend-lang.com/n/gralha-text-scan) (all MIT): `text-scan` · `bytes` · `byte-words` · `deflate` · `gzip-frame` (now named) · `crc32` · `image` · `png-decode` · `jpeg-decode` · `css-style` · `xml-doc` · `ustar` · `truetype` · `coverage` · `bendquest` (proof-carrying game-rules kernel) · `raylib` · `http-core` · `http-server` · `svg-render` — whole family bumped to `0.1.0.1` this week — [repo](https://github.com/nicolas-abril/bend2-libs)
+- [**bend-osdev-\***](https://hub.bend-lang.com/n/bend-osdev-word64) (all MIT, all ship `LAWS.bend`/`PROOF.bend`): `word64` · `bytes` · `caps` · `apparmor` · `acpi` · `bpf` · `aead` · `aes` · `algo` · `array` · `cbc` · `cipher-modes` · `crc` · `crypto` · `gf` · `hashes` · `legacy-ciphers` · `mode-core` · `pkcs7` · `u32` · **new:** `aria` · `blowfish` · `camellia` · `cast5` · `cipher-core` (now named) — OS-dev in Bend with machine-checked laws — [repo](https://github.com/ScottMoore0/bend-osdev)
 - **LLM SDKs**: [bend-anthropic-sdk](https://hub.bend-lang.com/n/bend-anthropic-sdk) ([repo](https://github.com/gouveags/anthropic-bend)) and [bend-openai-sdk](https://hub.bend-lang.com/n/bend-openai-sdk) — unofficial SDKs with typed requests, streaming, tool calling
 - [**awesome-bend**](https://github.com/777genius/awesome-bend) — the community-curated list; a good second stop for discovery
 
@@ -135,6 +139,9 @@ The most-depended-on packages on the hub (`bend-kit-bytes` has 99 dependents). A
 | [ScottMoore0/bend-osdev](https://github.com/ScottMoore0/bend-osdev) | The `bend-osdev-*` family: word64, bytes, caps, apparmor, acpi, bpf + aead, aes, algo, array, cbc, cipher-modes, crc, crypto, gf, hashes, legacy-ciphers, mode-core, pkcs7, u32 — OS-dev with proved laws |
 | [costamatheus97/bend-parallel](https://github.com/costamatheus97/bend-parallel) | `bend-parallel` — parallel histogram/scan/sort |
 | [gouveags/anthropic-bend](https://github.com/gouveags/anthropic-bend) | `bend-anthropic-sdk` |
+| [luiscleto/lawful-words](https://github.com/luiscleto/lawful-words) | `lawful-words` — U32↔Nat law library (same author family: `lawful-arrays`, `lawful-bytes`, `lawful-fields`, `lawful-halves`) |
+| [Emerging-Patterns/ezmcp](https://github.com/Emerging-Patterns/ezmcp) | `ezmcp` — MCP servers/clients for Bend 2 (the `ez*` family's org) |
+| [biocini/tree-sitter-bend](https://github.com/biocini/tree-sitter-bend) | Tree-sitter grammar + highlighting queries for Bend 2 (not a hub package — editor tooling) |
 | [777genius/awesome-bend](https://github.com/777genius/awesome-bend) | Curated ecosystem list |
 
 Only 3 repos are actually linked from hub package descriptions — the rest were found by searching. If you publish Bend packages, put a `Source:` link in your description.
@@ -160,13 +167,15 @@ The humans (GitHub handles) behind the packages above — follow them if you wor
 - **[@ScottMoore0](https://github.com/ScottMoore0)** — the `bend-osdev-*` verified OS-dev packages
 - **[@costamatheus97](https://github.com/costamatheus97)** — `bend-parallel`
 - **[@gouveags](https://github.com/gouveags)** — `bend-anthropic-sdk`
+- **[@luiscleto](https://github.com/luiscleto)** — the `lawful-*` law-and-proof family (words, arrays, bytes, fields, halves)
+- **[@Emerging-Patterns](https://github.com/Emerging-Patterns)** (org) — the `ez*` family (`ezjson`, `ezhttp`, `ezmcp`, `ezsys`)
 - **[@subtleGradient](https://github.com/subtleGradient)** — `bend-over-sqlite` (SQLite for C and Wasm targets); collaborator on this repo
 
 ## Looking for source
 
 Promising packages with **no public repository found** — if you know the authors, point them here:
 
-`bend-tensors` · `bend-blas-lapack` · `bend-ml` (`0x53dde92d…`) · tinygrad-laws (`0xe6b82fa6…`) · the LAWS-spec package (`0x983079cc7642…`) · `wordlib` (`0xb13667d5…`) · `bolt` · `ezx` · `shake` · `snap` · `emerging-ezjson/eztoml/ezhttp/ezimg/ezaudio` · `mylsm-lsm-store` · `bend-csv-parser` · `bend-math-lib` · `bend-prot` · `bend-edit-distance` · `bend-lint-api` / `bend-lint-rules` · `bendcheck` (`0x738b3053…`) · `bend-window-capture` · `bend-window-ref` · `bend-init` (`0x1e0cc367…`) · `bend-lawful-stdlib` · `bend-over-js-eval` (`0x646b2235…`) · **new 2026-10-26:** `mlbend-*` (datasets, huggingface, cluster, metrics, pipeline, preprocess, select, split) · `bend-visgraph` · `bendvy-ecs-core` · `bendonnect-rpc` · `bend-lint-pack` · `bend-semver-checks` · `bend-toon-codec` · `cswap-bend-cli` · `cli`
+`bend-tensors` · `bend-blas-lapack` · `bend-ml` (`0x53dde92d…`) · tinygrad-laws (`0xe6b82fa6…`) · the LAWS-spec package (`0x983079cc7642…`) · `wordlib` (`0xb13667d5…`) · `bolt` · `ezx` · `shake` · `snap` · `emerging-eztoml/ezimg/ezaudio` (note: `emerging-ezjson`/`emerging-ezhttp` graduated to short names `ezjson`/`ezhttp` this week, same hashes; `ezmcp`'s repo found: `Emerging-Patterns/ezmcp`) · `mylsm-lsm-store` · `bend-csv-parser` · `bend-math-lib` · `bend-prot` · `bend-edit-distance` · `bend-lint-api` / `bend-lint-rules` · `bendcheck` (`0x738b3053…`) · `bend-window-capture` · `bend-window-ref` · `bend-init` (`0x1e0cc367…`) · `bend-lawful-stdlib` · `bend-over-js-eval` (`0x646b2235…`) · **new 2026-10-26:** `mlbend-*` (datasets, huggingface, cluster, metrics, pipeline, preprocess, select, split) · `bend-visgraph` · `bendvy-ecs-core` · `bendonnect-rpc` · `bend-lint-pack` · `bend-semver-checks` · `bend-toon-codec` · `cswap-bend-cli` · `cli` · **new 2026-11-02:** `bend-kube-runtime` · `mlbend-generative` · `mlbend-report` · `yaml-for-bend` · `bend-pipe-session` · `bend-stdio-pipes` · `minebender-game`
 
 ## Ecosystem gaps
 
@@ -177,24 +186,24 @@ What you'd expect in a healthy package ecosystem but won't find on BendHub yet �
 ### Build & ship
 - **Start a new project** → no scaffolding: no `init` templates or example repos wired to `ez` (a start: unnamed `0x1e0cc367…` is "a proven Bend project in one command", but hash-only with no repo)
 - ★ **Format code** → no formatter — no `gofmt`/`black` equivalent anywhere on the hub
-- **Edit comfortably** → no Zed extension, no tree-sitter grammar — but a VS Code client now exists: `kbrianps.bend2` (highlighting, live diagnostics, hover, formatting through a bundled bend2-lsp; found via web search 2026-10-26, not a hub package)
+- **Edit comfortably** → no Zed extension — but a VS Code client now exists: `kbrianps.bend2` (highlighting, live diagnostics, hover, formatting through a bundled bend2-lsp; found via web search 2026-10-26, not a hub package), and a tree-sitter grammar now exists: `biocini/tree-sitter-bend` (generated C parser, language bindings, Neovim setup; found via builtwithbend.com 2026-11-02, not a hub package)
 - **Publish confidently** → `ezx` (the package manager) has no public repo or docs; the publish flow is tribal knowledge
 - **Lock dependencies** → no lockfile story, no audit/vulnerability tooling
 
 ### Prove it's correct
-- ★ **Run tests** → no general test runner or assertion library; property testing now exists (`bend-kit-property@0.3.0.0`: reproducible property checks with generated inputs + greedy shrinking; `bendcheck` `0x738b3053…`) — partially closed 2026-10-19
+- ★ **Run tests** → no general test runner or assertion library; property testing now exists (`bend-kit-property@0.4.0.0`: reproducible property checks with generated inputs + greedy shrinking; `bendcheck` `0x738b3053…`) — partially closed 2026-10-19
 - ★ **Check laws before proving** → `lawcheck` (counterexample finder) lives in `bendlib/bendlib` but isn't published as a package
 - **Debug & profile** → no debugger, no profiler, no REPL/notebook story
 - ★ **Build verified math** → no mathlib equivalent; expressivity gaps limit what pure math can even be stated (see issue #64)
 
 ### Numbers & ML
-- ★ **Train a model** → autodiff now on the hub (`bend-ml-autograd@0.1.1.0`, "automatic differentiation with a proved law"; `bendtorch@1.1.1.0`: F32 tensors, matmul, autograd tape, losses, SGD, all with laws+proofs) plus GitHub-only `bendygrad`; data-loading helpers arrived 2026-10-26 (`mlbend-datasets`, `mlbend-split`/`mlbend-select`, `mlbend-preprocess`, `mlbend-pipeline`, `mlbend-metrics`, `mlbend-cluster`) — still no optimizer zoo (Adam/RMSprop), no model serialization format
+- ★ **Train a model** → autodiff now on the hub (`bend-ml-autograd@0.1.1.0`, "automatic differentiation with a proved law"; `bendtorch@1.3.0.0`: F32 tensors, matmul, autograd tape, losses, SGD, all with laws+proofs) plus GitHub-only `bendygrad`; data-loading helpers arrived 2026-10-26 (`mlbend-datasets`, `mlbend-split`/`mlbend-select`, `mlbend-preprocess`, `mlbend-pipeline`, `mlbend-metrics`, `mlbend-cluster`) and evaluation/generative pieces arrived 2026-11-02 (`mlbend-report`, `mlbend-generative`) — still no optimizer zoo (Adam/RMSprop), no model serialization format
 - **Do statistics** → no distributions, sampling, or hypothesis-testing package
 - ★ **Sparse / FFT / signal** → dense linear algebra only (`bend-tensors`, `bend-ml-tensor`); no sparse matrices, no FFT
 - **Plot results** → no charting or SVG generation
 
 ### Data
-- **Read common formats** → no YAML, MessagePack, Parquet/Arrow, or PDF
+- **Read common formats** → YAML arrived 2026-11-02 (`yaml-for-bend@0.1.1.0`: read YAML text into values, write values back as YAML); still no MessagePack, Parquet/Arrow, or PDF
 - **Wrangle tables** → no dataframe
 - ~~**Validate schemas** → no JSON Schema / validation library~~ — closed 2026-10-05 by `bend-schema-lib@0.1.0.0`
 

@@ -1,6 +1,6 @@
 # All named packages on BendHub
 
-> Snapshot: **2026-11-02** · 201 unique named packages (754 named records), 282 hash-only packages. Full registry: <https://hub.bend-lang.com>
+> Snapshot: **2026-11-09** · 218 unique named packages (829 named records), 291 hash-only packages. Full registry: <https://hub.bend-lang.com>
 
 Latest version of each named package, A–Z. Click through to BendHub for file lists, older versions, and dependents.
 
@@ -29,15 +29,15 @@ Latest version of each named package, A–Z. Click through to BendHub for file l
 - [`bend-kit-crdt@0.2.0.0`](https://hub.bend-lang.com/n/bend-kit-crdt) — Replicated data types: grow-only counters with proved merges. Source: https://github.com/paymog/bend-kit/tree/main/crdt
 - [`bend-kit-crypto@0.2.2.2`](https://hub.bend-lang.com/n/bend-kit-crypto) — Digests, HMAC, HKDF, PBKDF2, scrypt, AEAD, and RSA and ECDSA signatures through OpenSSL 3 libcrypto, plus OS secure random bytes. Source: https://github.com/paymog/bend-kit/tree/main/crypto
 - [`bend-kit-csv@0.3.0.0`](https://hub.bend-lang.com/n/bend-kit-csv) — CSV (RFC 4180) over bytes: a record cursor, a whole-document parse, and an encoder. Source: https://github.com/paymog/bend-kit/tree/main/csv
-- [`bend-kit-dns@0.7.0.0`](https://hub.bend-lang.com/n/bend-kit-dns) — DNS codec and host lookup. Source: https://github.com/paymog/bend-kit/tree/main/dns
+- [`bend-kit-dns@0.7.1.0`](https://hub.bend-lang.com/n/bend-kit-dns) — DNS codec and host lookup. Source: https://github.com/paymog/bend-kit/tree/main/dns
 - [`bend-kit-encoding@0.5.0.0`](https://hub.bend-lang.com/n/bend-kit-encoding) — UTF-8 encoding and decoding between text and Bytes. Source: https://github.com/paymog/bend-kit/tree/main/encoding
-- [`bend-kit-f64@0.1.0.0`](https://hub.bend-lang.com/n/bend-kit-f64) — IEEE 754 binary64 add, sub, mul, and div. Source: https://github.com/paymog/bend-kit/tree/main/f64
+- [`bend-kit-f64@0.1.1.0`](https://hub.bend-lang.com/n/bend-kit-f64) — IEEE 754 binary64 add, sub, mul, and div. Source: https://github.com/paymog/bend-kit/tree/main/f64
 - [`bend-kit-files@0.3.1.0`](https://hub.bend-lang.com/n/bend-kit-files) — POSIX paths plus directory and metadata effects. Source: https://github.com/paymog/bend-kit/tree/main/files
 - [`bend-kit-fmt@0.1.0.0`](https://hub.bend-lang.com/n/bend-kit-fmt) — Text formatting: a string builder, format, padding, and shortest F32 printing.
 - [`bend-kit-gateway@0.3.0.0`](https://hub.bend-lang.com/n/bend-kit-gateway) — A guarded read-through gateway: authorize, admit, serve from cache, and fetch on a miss. Source: https://github.com/paymog/bend-kit/tree/main/gateway
 - [`bend-kit-hairpin@0.14.0.0`](https://hub.bend-lang.com/n/bend-kit-hairpin) — Hairpin: an HTTP client with a base URL, default headers, a pool, cookies, mTLS, redirects, and proven retries. Source: https://github.com/paymog/bend-kit/tree/main/hairpin
 - [`bend-kit-hash@0.3.0.2`](https://hub.bend-lang.com/n/bend-kit-hash) — Non-cryptographic hashes over Bytes: FNV-1a, xxHash, SipHash-1-3, CRC-32, and Adler-32. Source: https://github.com/paymog/bend-kit/tree/main/hash
-- [`bend-kit-http@0.38.2.0`](https://hub.bend-lang.com/n/bend-kit-http) — HTTP/1.1 and HTTP/2 client, with an HTTP/1.1 server. Source: https://github.com/paymog/bend-kit/tree/main/http
+- [`bend-kit-http@0.38.5.0`](https://hub.bend-lang.com/n/bend-kit-http) — HTTP/1.1 and HTTP/2 client, with an HTTP/1.1 server. Source: https://github.com/paymog/bend-kit/tree/main/http
 - [`bend-kit-http2@0.4.0.0`](https://hub.bend-lang.com/n/bend-kit-http2) — RFC 9113 HTTP/2 client and frames, with RFC 7541 HPACK over packed Bytes.
 - [`bend-kit-int@0.2.0.0`](https://hub.bend-lang.com/n/bend-kit-int) — Fixed-width integers U8, U16, U64, I32 and I64: wrapping, checked and saturating arithmetic, and text in radix 2 to 36.
 - [`bend-kit-journal@0.3.1.0`](https://hub.bend-lang.com/n/bend-kit-journal) — Append-only journal: checksummed frames, fsync'd appends, and crash recovery of the committed prefix. Source: https://github.com/paymog/bend-kit/tree/main/journal
@@ -46,25 +46,26 @@ Latest version of each named package, A–Z. Click through to BendHub for file l
 - [`bend-kit-lemmas@0.1.1.0`](https://hub.bend-lang.com/n/bend-kit-lemmas) — Proved laws that relate Word and U32 arithmetic to Nat. Source: https://github.com/paymog/bend-kit/tree/main/lemmas
 - [`bend-kit-llm@0.13.0.1`](https://hub.bend-lang.com/n/bend-kit-llm) — LLM client for the Anthropic Messages and OpenAI Chat Completions APIs, with SSE streaming. Source: https://github.com/paymog/bend-kit/tree/main/llm
 - [`bend-kit-migrate@0.3.0.0`](https://hub.bend-lang.com/n/bend-kit-migrate) — Versioned subscription records: validated JSON decode, proved migrations, and encode. Source: https://github.com/paymog/bend-kit/tree/main/migrate
-- [`bend-kit-multipart@0.3.0.0`](https://hub.bend-lang.com/n/bend-kit-multipart) — multipart/form-data (RFC 7578): an encoder with a secure random boundary and a streaming decoder over Bytes. Source: https://github.com/paymog/bend-kit/tree/main/multipart
+- [`bend-kit-multipart@0.3.0.1`](https://hub.bend-lang.com/n/bend-kit-multipart) — multipart/form-data (RFC 7578): an encoder with a secure random boundary and a streaming decoder over Bytes. Source: https://github.com/paymog/bend-kit/tree/main/multipart
 - [`bend-kit-netip@0.1.0.0`](https://hub.bend-lang.com/n/bend-kit-netip) — IPv4 and IPv6 address values: strict parsing, RFC 5952 text, and CIDR prefixes. Source: https://github.com/paymog/bend-kit/tree/main/netip
 - [`bend-kit-notch@0.4.0.0`](https://hub.bend-lang.com/n/bend-kit-notch) — Leveled, structured logging: a logger value, key-value fields, and logfmt or JSON-lines output. Source: https://github.com/paymog/bend-kit/tree/main/notch
 - [`bend-kit-oauth2@0.11.0.1`](https://hub.bend-lang.com/n/bend-kit-oauth2) — OAuth 2.0 client credentials, refresh, and authorization code with PKCE over Hairpin. Source: https://github.com/paymog/bend-kit/tree/main/oauth2
 - [`bend-kit-parse@0.2.0.0`](https://hub.bend-lang.com/n/bend-kit-parse) — Parser combinators over text, with positioned errors. Source: https://github.com/paymog/bend-kit/tree/main/parse
-- [`bend-kit-postgres@0.3.0.0`](https://hub.bend-lang.com/n/bend-kit-postgres) — Postgres client: protocol 3.0 over TCP or TLS, SCRAM-SHA-256, prepared queries, and a pool. Source: https://github.com/paymog/bend-kit/tree/main/postgres
+- [`bend-kit-postgres@0.3.1.0`](https://hub.bend-lang.com/n/bend-kit-postgres) — Postgres client: protocol 3.0 over TCP or TLS, SCRAM-SHA-256, prepared queries, and a pool. Source: https://github.com/paymog/bend-kit/tree/main/postgres
 - [`bend-kit-process@0.5.0.0`](https://hub.bend-lang.com/n/bend-kit-process) — Subprocesses and process-level OS access, with byte-exact input and output.
 - [`bend-kit-property@0.4.0.0`](https://hub.bend-lang.com/n/bend-kit-property) — Reproducible property checks with generated inputs and greedy shrinking.
 - [`bend-kit-protobuf@0.2.0.0`](https://hub.bend-lang.com/n/bend-kit-protobuf) — Pure bounded protobuf wire codec over Bytes. https://github.com/paymog/bend-kit/tree/main/protobuf
 - [`bend-kit-random@0.1.0.1`](https://hub.bend-lang.com/n/bend-kit-random) — Seeded pseudo-random numbers: xoshiro128**, unbiased ranges, floats and shuffles. Not for cryptography.
-- [`bend-kit-redis@0.3.0.0`](https://hub.bend-lang.com/n/bend-kit-redis) — Redis and Valkey client: RESP3 over TCP or TLS, with pipelining and a pool. Source: https://github.com/paymog/bend-kit/tree/main/redis
+- [`bend-kit-redis@0.3.1.0`](https://hub.bend-lang.com/n/bend-kit-redis) — Redis and Valkey client: RESP3 over TCP or TLS, with pipelining and a pool. Source: https://github.com/paymog/bend-kit/tree/main/redis
 - [`bend-kit-regex@0.8.0.0`](https://hub.bend-lang.com/n/bend-kit-regex) — Linear-time regular expressions: RE2 syntax, Pike VM, capture groups. Source: https://github.com/paymog/bend-kit/tree/main/regex
 - [`bend-kit-resources@0.1.0.0`](https://hub.bend-lang.com/n/bend-kit-resources) — Bounded capacity pools with affine reservations: reserve, release, split, and combine.
 - [`bend-kit-retry@0.3.0.0`](https://hub.bend-lang.com/n/bend-kit-retry) — Retry policy: a shared attempt budget, an operation deadline, bounded backoff, and a circuit breaker.
 - [`bend-kit-router@0.2.0.0`](https://hub.bend-lang.com/n/bend-kit-router) — Prepared HTTP routes with exact paths, validated registration, and path-first method selection. Source: https://github.com/paymog/bend-kit/tree/main/router
-- [`bend-kit-runner@0.13.0.1`](https://hub.bend-lang.com/n/bend-kit-runner) — Durable job runner: a journaled scheduler queue, bounded by a resources pool, with retry and a breaker per target. Source: https://github.com/paymog/bend-kit/tree/main/runner
+- [`bend-kit-runner@0.13.1.0`](https://hub.bend-lang.com/n/bend-kit-runner) — Durable job runner: a journaled scheduler queue, bounded by a resources pool, with retry and a breaker per target. Source: https://github.com/paymog/bend-kit/tree/main/runner
 - [`bend-kit-scheduler@0.4.1.0`](https://hub.bend-lang.com/n/bend-kit-scheduler) — Pure deadline queues and bounded fixed-rate/fixed-delay recurrence over exact clock ticks.
 - [`bend-kit-sigv4@0.11.0.1`](https://hub.bend-lang.com/n/bend-kit-sigv4) — AWS Signature V4 signing and S3 object storage over Hairpin. Source: https://github.com/paymog/bend-kit/tree/main/sigv4
 - [`bend-kit-sqlite@0.1.0.1`](https://hub.bend-lang.com/n/bend-kit-sqlite) — Prepared SQLite statements through libsqlite3. Source: https://github.com/paymog/bend-kit/tree/main/sqlite
+- [`bend-kit-storage@0.1.0.0`](https://hub.bend-lang.com/n/bend-kit-storage) — Content-addressed object store: Merkle trees, sync plans, and reachability GC with proved laws. Source: https://github.com/paymog/bend-kit/tree/main/storage
 - [`bend-kit-stream@0.3.2.0`](https://hub.bend-lang.com/n/bend-kit-stream) — Bounded packed-byte transfers between files and TCP/TLS sockets.
 - [`bend-kit-tar@0.3.0.0`](https://hub.bend-lang.com/n/bend-kit-tar) — tar archives (POSIX ustar with PAX path and size records) of regular files and directories over Bytes. Source: https://github.com/paymog/bend-kit/tree/main/tar
 - [`bend-kit-time@0.3.0.0`](https://hub.bend-lang.com/n/bend-kit-time) — Clocks, Duration and Instant, Gregorian dates, RFC 3339 and HTTP-date text, and TZif time zones. Source: https://github.com/paymog/bend-kit/tree/main/time
@@ -72,25 +73,25 @@ Latest version of each named package, A–Z. Click through to BendHub for file l
 - [`bend-kit-unicode@0.1.0.0`](https://hub.bend-lang.com/n/bend-kit-unicode) — Generated by gen.py from UCD 17.0.0. Do not edit.
 - [`bend-kit-url@0.4.1.0`](https://hub.bend-lang.com/n/bend-kit-url) — URL parsing, resolution, and percent-encoding (RFC 3986). Source: https://github.com/paymog/bend-kit/tree/main/url
 - [`bend-kit-webhooks@0.11.0.1`](https://hub.bend-lang.com/n/bend-kit-webhooks) — Webhook signatures: Standard Webhooks sign and verify, Stripe and GitHub verify, over the raw body. Source: https://github.com/paymog/bend-kit/tree/main/webhooks
-- [`bend-kit-websocket@0.4.0.0`](https://hub.bend-lang.com/n/bend-kit-websocket) — RFC 6455 WebSocket client: opening handshake, frames over packed Bytes, and messages over Wire. Source: https://github.com/paymog/bend-kit/tree/main/websocket
+- [`bend-kit-websocket@0.4.1.0`](https://hub.bend-lang.com/n/bend-kit-websocket) — RFC 6455 WebSocket client: opening handshake, frames over packed Bytes, and messages over Wire. Source: https://github.com/paymog/bend-kit/tree/main/websocket
 - [`bend-kit-wire@0.4.8.0`](https://hub.bend-lang.com/n/bend-kit-wire) — Byte-exact TCP, UDP, and TLS sockets. Source: https://github.com/paymog/bend-kit/tree/main/wire
 - [`bend-kit-zlib@0.5.1.0`](https://hub.bend-lang.com/n/bend-kit-zlib) — DEFLATE, gzip, and zlib encoding and decoding (RFC 1951, 1952, 1950) over Bytes, plus gzip, zstd, and brotli through the C libraries. Source: https://github.com/paymog/bend-kit/tree/main/zlib
-- [`bend-kube-runtime@0.2.0.0`](https://hub.bend-lang.com/n/bend-kube-runtime) — The package entry: `bend package.bend --publish bend-kube-runtime@X.Y.Z.0` [{'file': 'LICENSE', 'id': 'MIT'}]
+- [`bend-kube-runtime@0.5.5.0`](https://hub.bend-lang.com/n/bend-kube-runtime) — The package entry: `bend package.bend --publish bend-kube-runtime@X.Y.Z.0` [{'file': 'LICENSE', 'id': 'MIT'}]
 - [`bend-lawful-stdlib@0.1.0.0`](https://hub.bend-lang.com/n/bend-lawful-stdlib) [{'file': 'LICENSE', 'id': 'MIT'}]
-- [`bend-lint-api@0.2.2.0`](https://hub.bend-lang.com/n/bend-lint-api) [{'file': 'LICENSE', 'id': 'MIT'}]
+- [`bend-lint-api@0.3.0.0`](https://hub.bend-lang.com/n/bend-lint-api) [{'file': 'LICENSE', 'id': 'MIT'}]
 - [`bend-lint-pack@0.1.1.0`](https://hub.bend-lang.com/n/bend-lint-pack) — bend-lint-rules: BendHub entry. Importing this file publishes all five rules and their helpers [{'file': 'LICENSE', 'id': 'GPL-3.0'}]
-- [`bend-lint-rules@0.2.2.0`](https://hub.bend-lang.com/n/bend-lint-rules) [{'file': 'LICENSE', 'id': 'MIT'}]
+- [`bend-lint-rules@0.3.0.0`](https://hub.bend-lang.com/n/bend-lint-rules) [{'file': 'LICENSE', 'id': 'MIT'}]
 - [`bend-math-lib@0.0.0.1`](https://hub.bend-lang.com/n/bend-math-lib) — Core module [{'file': 'LICENSE', 'id': 'MIT'}]
 - [`bend-mathlib@0.8.1.0`](https://hub.bend-lang.com/n/bend-mathlib) — bend-mathlib: machine-checked lemmas for Bend 2 (Nat, Bool, List, String, Maybe, equality, order, algebra, permutations, sorting, machine words); import one module, e.g. bend-mathlib@0.8.1.0/nat.bend. [{'file': 'LICENSE', 'id': 'Apache-2.0'}]
 - [`bend-ml-autograd@0.1.1.0`](https://hub.bend-lang.com/n/bend-ml-autograd) — bend-ml-autograd: automatic differentiation with a proved law. [{'file': 'LICENSE', 'id': 'MIT'}]
-- [`bend-ml-binary-read@0.2.0.0`](https://hub.bend-lang.com/n/bend-ml-binary-read) — bend-ml-binary-read: little-endian F32 numbers from a file, read straight into an Array. [{'file': 'LICENSE', 'id': 'MIT'}]
+- [`bend-ml-binary-read@0.2.0.1`](https://hub.bend-lang.com/n/bend-ml-binary-read) — bend-ml-binary-read: little-endian F32 numbers from a file, read straight into an Array<F32>. [{'file': 'LICENSE', 'id': 'MIT'}]
 - [`bend-ml-bpe-tokenizer@0.1.3.0`](https://hub.bend-lang.com/n/bend-ml-bpe-tokenizer) — bend-ml-bpe-tokenizer: byte-level BPE with a proved roundtrip. [{'file': 'LICENSE', 'id': 'MIT'}]
-- [`bend-ml-llama@0.2.1.0`](https://hub.bend-lang.com/n/bend-ml-llama) — bend-ml-llama: Llama-architecture language models (SmolLM2 and the rest of the family) in Bend 2, with the [{'file': 'LICENSE', 'id': 'MIT'}]
+- [`bend-ml-llama@0.2.1.1`](https://hub.bend-lang.com/n/bend-ml-llama) — bend-ml-llama: Llama-architecture language models (SmolLM2 and the rest of the family) in Bend 2, with the [{'file': 'LICENSE', 'id': 'MIT'}]
 - [`bend-ml-nat-lemmas@0.1.2.0`](https://hub.bend-lang.com/n/bend-ml-nat-lemmas) — bend-ml-nat-lemmas: Nat and List lemmas, proved, that Bend's Base does not have. [{'file': 'LICENSE', 'id': 'MIT'}]
 - [`bend-ml-tensor@0.1.2.0`](https://hub.bend-lang.com/n/bend-ml-tensor) — bend-ml-tensor: tensors with the shape in the TYPE. A shape error is a type error. [{'file': 'LICENSE', 'id': 'MIT'}]
-- [`bend-ml-tensor-array@0.1.19.0`](https://hub.bend-lang.com/n/bend-ml-tensor-array) — bend-ml-tensor-array: tensors over a flat Array, with the shape in the type. [{'file': 'LICENSE', 'id': 'MIT'}]
-- [`bend-ml-tensor-fork@0.1.6.0`](https://hub.bend-lang.com/n/bend-ml-tensor-fork) — bend-ml-tensor-fork: bend-ml-tensor-array's products, with the parallel blocks sharing their operands; and par1..par4, [{'file': 'LICENSE', 'id': 'MIT'}]
-- [`bend-ml-tensor-gpu@0.1.5.1`](https://hub.bend-lang.com/n/bend-ml-tensor-gpu) — bend-ml-tensor-gpu: tensor-array's products on the GPU, with tensor-array's bits. [{'file': 'LICENSE', 'id': 'MIT'}]
+- [`bend-ml-tensor-array@0.1.20.0`](https://hub.bend-lang.com/n/bend-ml-tensor-array) — bend-ml-tensor-array: tensors over a flat Array<F32>, with the shape in the type. [{'file': 'LICENSE', 'id': 'MIT'}]
+- [`bend-ml-tensor-fork@0.1.7.1`](https://hub.bend-lang.com/n/bend-ml-tensor-fork) — bend-ml-tensor-fork: bend-ml-tensor-array's products, with the parallel blocks sharing their operands; and par1..par4, [{'file': 'LICENSE', 'id': 'MIT'}]
+- [`bend-ml-tensor-gpu@0.1.5.2`](https://hub.bend-lang.com/n/bend-ml-tensor-gpu) — bend-ml-tensor-gpu: tensor-array's products on the GPU, with tensor-array's bits. [{'file': 'LICENSE', 'id': 'MIT'}]
 - [`bend-net-bytes@0.2.0.0`](https://hub.bend-lang.com/n/bend-net-bytes) — Byte buffers packed four bytes to a U32, with bounds-checked access.
 - [`bend-net-encoding@0.2.1.0`](https://hub.bend-lang.com/n/bend-net-encoding) — UTF-8 and hex encoding for byte strings.
 - [`bend-net-json@0.3.0.0`](https://hub.bend-lang.com/n/bend-net-json) — JSON values, parsed and encoded as RFC 8259.
@@ -135,31 +136,47 @@ Latest version of each named package, A–Z. Click through to BendHub for file l
 - [`bend-time-lib@0.4.0.1`](https://hub.bend-lang.com/n/bend-time-lib) [{'file': 'LICENSE', 'id': 'Apache-2.0'}]
 - [`bend-toon-codec@0.1.0.0`](https://hub.bend-lang.com/n/bend-toon-codec) [{'file': 'LICENSE', 'id': 'GPL-3.0-or-later'}]
 - [`bend-trace-context@0.2.0.0`](https://hub.bend-lang.com/n/bend-trace-context) — W3C Trace Context Level 2 propagation, with its rules proved as laws. Source: https://github.com/LucasGois1/bend-trace-context [{'file': 'LICENSE', 'id': 'MIT'}]
+- [`bend-ui-test@0.1.0.2`](https://hub.bend-lang.com/n/bend-ui-test)
 - [`bend-visgraph@2.0.0.0`](https://hub.bend-lang.com/n/bend-visgraph) — ts2vg's visibility graphs of time series, in Bend2, on every CPU thread. [{'file': 'LICENSE', 'id': 'MIT'}]
-- [`bend-window-capture@0.1.0.1`](https://hub.bend-lang.com/n/bend-window-capture) — Read a Bend-owned X11 window's client pixels into an affine RGB array. [{'file': 'LICENSE', 'id': 'Apache-2.0'}]
-- [`bend-window-ref@0.1.0.1`](https://hub.bend-lang.com/n/bend-window-ref) — Export a Bend-owned window's X11 display name and resource ID without transferring ownership. [{'file': 'LICENSE', 'id': 'Apache-2.0'}]
+- [`bend-vulkan-library@0.1.0.1`](https://hub.bend-lang.com/n/bend-vulkan-library) — Native Vulkan bindings for Bend: GPU memory, command recording, synchronization, and indexed graphics on 64-bit Linux. Source: https://github.com/aivv73/bend-vulkan [{'file': 'LICENSE', 'id': 'MIT-0'}]
+- [`bend-window-capture@0.1.0.3`](https://hub.bend-lang.com/n/bend-window-capture) — Read a Bend-owned X11 window's client pixels into an affine RGB array. Source: https://github.com/aivv73/bend-window-capture [{'file': 'LICENSE', 'id': 'Apache-2.0'}]
+- [`bend-window-ref@0.1.0.3`](https://hub.bend-lang.com/n/bend-window-ref) — Export a Bend-owned window's X11 display name and resource ID without transferring ownership. https://github.com/aivv73/bend-window-ref [{'file': 'LICENSE', 'id': 'Apache-2.0'}]
 - [`bendlib-kernel-list@1.0.0.0`](https://hub.bend-lang.com/n/bendlib-kernel-list) — bendlib-kernel-list: frozen step-list permutations over List, generic over -A: Data. [{'file': 'LICENSE', 'id': 'Apache-2.0'}]
 - [`bendonnect-rpc@0.1.0.0`](https://hub.bend-lang.com/n/bendonnect-rpc) — Bendonnect: the Connect RPC protocol (https://connectrpc.com/docs/protocol/) for Bend 2. [{'file': 'LICENSE', 'id': 'Apache-2.0'}]
-- [`bendtorch@1.3.0.0`](https://hub.bend-lang.com/n/bendtorch) — The entry to publish: `bend package.bend --publish @` sends this file and everything it imports, so [{'file': 'LICENSE', 'id': 'MIT'}]
+- [`bendtorch@2.0.2.0`](https://hub.bend-lang.com/n/bendtorch) — The entry to publish: `bend package.bend --publish <name>@<version>` sends this file and everything it imports, so [{'file': 'LICENSE', 'id': 'MIT'}]
 - [`bendtorch-core@0.1.0.0`](https://hub.bend-lang.com/n/bendtorch-core) — bendtorch: a PyTorch-like tensor library in Bend (F32 tensors, matmul, autograd tape, losses, SGD), with its laws and proofs; import one module, e.g. bendtorch-core@0.1.0.0/src/tensor/core.bend. [{'file': 'LICENSE', 'id': 'MIT'}]
-- [`bendtorch-fast@1.3.0.0`](https://hub.bend-lang.com/n/bendtorch-fast) — BendTorch's layers over bend-ml-tensor-fork: the same layers, types and bits as torch/main.bend's, faster where the [{'file': 'LICENSE', 'id': 'MIT'}]
-- [`bendtorch-gpu@1.3.0.0`](https://hub.bend-lang.com/n/bendtorch-gpu) — BendTorch's layers with their work on the GPU (bend-ml-tensor-gpu): the same layers, types and bits as [{'file': 'LICENSE', 'id': 'MIT'}]
-- [`bendtorch-load@1.3.0.0`](https://hub.bend-lang.com/n/bendtorch-load) — Temporary loading-only exception: bend-ml-binary-read is foreign C/JavaScript. No file with laws imports this module. [{'file': 'LICENSE', 'id': 'MIT'}]
-- [`bendvy-ecs-core@0.1.0.3`](https://hub.bend-lang.com/n/bendvy-ecs-core) — Bendvy 0.1.0.1 replacement execution entry. [{'file': 'LICENSE', 'id': 'MIT OR Apache-2.0'}]
+- [`bendtorch-fast@2.0.2.0`](https://hub.bend-lang.com/n/bendtorch-fast) — BendTorch's layers over bend-ml-tensor-fork: the same layers, types and bits as torch/main.bend's, faster where the [{'file': 'LICENSE', 'id': 'MIT'}]
+- [`bendtorch-gpu@2.0.2.0`](https://hub.bend-lang.com/n/bendtorch-gpu) — BendTorch's layers with their work on the GPU (bend-ml-tensor-gpu): the same layers, types and bits as [{'file': 'LICENSE', 'id': 'MIT'}]
+- [`bendtorch-load@2.0.2.0`](https://hub.bend-lang.com/n/bendtorch-load) — Temporary loading-only exception: bend-ml-binary-read is foreign C/JavaScript. No file with laws imports this module. [{'file': 'LICENSE', 'id': 'MIT'}]
+- [`bendvy-ecs-core@0.1.0.4`](https://hub.bend-lang.com/n/bendvy-ecs-core) — Bendvy 0.1.0.1: typed ECS, events, schedules, inspection and persistence. [{'file': 'LICENSE', 'id': 'MIT OR Apache-2.0'}]
 - [`ber-core-store@0.1.2.0`](https://hub.bend-lang.com/n/ber-core-store) [{'file': 'LICENSE', 'id': 'BSD-3-Clause'}]
-- [`bolt@1.27.0.0`](https://hub.bend-lang.com/n/bolt) — bolt: a linter, checker and language server for Bend 2. [{'file': 'LICENSE', 'id': 'MIT'}]
+- [`bolt@1.28.0.0`](https://hub.bend-lang.com/n/bolt) — bolt: a linter, checker and language server for Bend 2. [{'file': 'LICENSE', 'id': 'MIT'}]
 - [`cli@0.2.0.0`](https://hub.bend-lang.com/n/cli) — Purpose: the public IO shell: probes the host, runs Cli.eval, writes its [{'file': 'LICENSE', 'id': 'MIT'}]
 - [`cswap-bend-cli@0.1.0.0`](https://hub.bend-lang.com/n/cswap-bend-cli) [{'file': 'LICENSE', 'id': 'GPL-3.0-or-later'}]
-- [`emerging-ezaudio@0.5.0.0`](https://hub.bend-lang.com/n/emerging-ezaudio) — ezaudio: audio for Bend 2, reading and writing WAV (RIFF PCM) and MP3 (MPEG-1 Layer III). [{'file': 'LICENSE', 'id': 'MIT'}]
+- [`element-asn1@0.1.0.0`](https://hub.bend-lang.com/n/element-asn1) — DER reading (X.690): TLVs, OIDs, BIT STRINGs, UTCTime and GeneralizedTime. Apache-2.0. Source: https://github.com/jonasporto/element-bend-libs/tree/main/packages/element-asn1 [{'file': 'LICENSE', 'id': 'Apache-2.0'}]
+- [`element-compress@0.1.0.1`](https://hub.bend-lang.com/n/element-compress) — DEFLATE inflate (RFC 1951), zlib and gzip framing, CRC-32 and Adler-32. Apache-2.0. Source: https://github.com/jonasporto/element-bend-libs/tree/main/packages/element-compress [{'file': 'LICENSE', 'id': 'Apache-2.0'}]
+- [`element-crypto@0.1.0.0`](https://hub.bend-lang.com/n/element-crypto) — SHA-1/2, HMAC, HKDF, AES-128-GCM, ChaCha20-Poly1305, X25519, P-256 ECDH, ECDSA and RSA verification. Apache-2.0. Source: https://github.com/jonasporto/element-bend-libs/tree/main/packages/element-crypto [{'file': 'LICENSE', 'id': 'Apache-2.0'}]
+- [`element-css-syntax@0.1.0.1`](https://hub.bend-lang.com/n/element-css-syntax) — A style sheet split into rules and declarations, as CSS Syntax 3, without interpreting them. Apache-2.0. Source: https://github.com/jonasporto/element-bend-libs/tree/main/packages/element-css-syntax [{'file': 'LICENSE', 'id': 'Apache-2.0'}]
+- [`element-hostio@0.1.0.0`](https://hub.bend-lang.com/n/element-hostio) — Host effects Base lacks: arguments, binary output, the wall clock, a loopback listener. Apache-2.0. Source: https://github.com/jonasporto/element-bend-libs/tree/main/packages/element-hostio [{'file': 'LICENSE', 'id': 'Apache-2.0'}]
+- [`element-html@0.1.0.0`](https://hub.bend-lang.com/n/element-html) — An HTML parser after the WHATWG algorithm: the full tokenizer, tree construction reduced to what server-rendered pages need, all 2231 named entities, serialization. Apache-2.0. Source: https://github.com/jonasporto/element-bend-libs/tree/main/packages/element-html [{'file': 'LICENSE', 'id': 'Apache-2.0'}]
+- [`element-http@0.1.0.0`](https://hub.bend-lang.com/n/element-http) — HTTP/1.1 client over TCP and TLS: requests, chunked bodies, gzip, redirects, cookies, DNS. Apache-2.0. Source: https://github.com/jonasporto/element-bend-libs/tree/main/packages/element-http [{'file': 'LICENSE', 'id': 'Apache-2.0'}]
+- [`element-image@0.1.0.1`](https://hub.bend-lang.com/n/element-image) — PNG encoder for 8-bit RGB: stored and fixed-Huffman deflate. Apache-2.0. Source: https://github.com/jonasporto/element-bend-libs/tree/main/packages/element-image [{'file': 'LICENSE', 'id': 'Apache-2.0'}]
+- [`element-ints@0.1.0.0`](https://hub.bend-lang.com/n/element-ints) — Signed 32-bit comparisons and printing on U32 (two's complement). Apache-2.0. Source: https://github.com/jonasporto/element-bend-libs/tree/main/packages/element-ints [{'file': 'LICENSE', 'id': 'Apache-2.0'}]
+- [`element-math@0.1.0.0`](https://hub.bend-lang.com/n/element-math) — Big naturals with Montgomery arithmetic; IEEE 754 binary64 in software; correctly rounded exp, log, sin, cos, tan. Apache-2.0. Source: https://github.com/jonasporto/element-bend-libs/tree/main/packages/element-math [{'file': 'LICENSE', 'id': 'Apache-2.0'}]
+- [`element-rfc3986@0.1.0.1`](https://hub.bend-lang.com/n/element-rfc3986) — URLs as RFC 3986: parse, resolve against a base, remove dot segments, recompose. Apache-2.0. Source: https://github.com/jonasporto/element-bend-libs/tree/main/packages/element-rfc3986 [{'file': 'LICENSE', 'id': 'Apache-2.0'}]
+- [`element-text@0.1.0.0`](https://hub.bend-lang.com/n/element-text) — UTF-8 decoding with U+FFFD recovery, Latin-1, charset sniffing, base64, JSON. Apache-2.0. Source: https://github.com/jonasporto/element-bend-libs/tree/main/packages/element-text [{'file': 'LICENSE', 'id': 'Apache-2.0'}]
+- [`element-tls13@0.1.0.0`](https://hub.bend-lang.com/n/element-tls13) — A TLS 1.3 client (and TLS 1.2 for older servers) as a pure state machine, sans-IO. Apache-2.0. Source: https://github.com/jonasporto/element-bend-libs/tree/main/packages/element-tls13 [{'file': 'LICENSE', 'id': 'Apache-2.0'}]
+- [`element-x509@0.1.0.0`](https://hub.bend-lang.com/n/element-x509) — X.509 certificates: PEM, parsing, host names, validity, path building to a root. Apache-2.0. Source: https://github.com/jonasporto/element-bend-libs/tree/main/packages/element-x509 [{'file': 'LICENSE', 'id': 'Apache-2.0'}]
+- [`emerging-ezaudio@0.6.0.0`](https://hub.bend-lang.com/n/emerging-ezaudio) — ezaudio: audio for Bend 2, reading and writing WAV (RIFF PCM) and MP3 (MPEG-1 Layer III). [{'file': 'LICENSE', 'id': 'MIT'}]
 - [`emerging-ezhttp@0.20.0.0`](https://hub.bend-lang.com/n/emerging-ezhttp) — ezhttp: HTTP/1.1 client and server for Bend 2, with auth, cookie and CORS helpers. [{'file': 'LICENSE', 'id': 'MIT'}]
-- [`emerging-ezimg@1.3.0.0`](https://hub.bend-lang.com/n/emerging-ezimg) — ezimg: images for Bend 2, with PNG and baseline JPEG decode and encode [{'file': 'LICENSE', 'id': 'MIT'}]
+- [`emerging-ezimg@1.4.0.0`](https://hub.bend-lang.com/n/emerging-ezimg) — ezimg: images for Bend 2, with PNG and baseline JPEG decode and encode [{'file': 'LICENSE', 'id': 'MIT'}]
 - [`emerging-ezjson@1.1.0.0`](https://hub.bend-lang.com/n/emerging-ezjson) — ezjson: JSON for Bend 2, with a parser, a printer and a pull cursor [{'file': 'LICENSE', 'id': 'MIT'}]
 - [`emerging-eztoml@0.10.0.0`](https://hub.bend-lang.com/n/emerging-eztoml) — eztoml: TOML for Bend 2, a proven parser and renderer for TOML documents. [{'file': 'LICENSE', 'id': 'MIT'}]
-- [`ezhttp@0.22.0.0`](https://hub.bend-lang.com/n/ezhttp) — ezhttp: HTTP/1.1 client and server for Bend 2, with auth, cookie and CORS helpers. [{'file': 'LICENSE', 'id': 'MIT'}]
+- [`ezhttp@0.24.0.0`](https://hub.bend-lang.com/n/ezhttp) — ezhttp: HTTP/1.1 client and server for Bend 2, with auth, cookie and CORS helpers. [{'file': 'LICENSE', 'id': 'MIT'}]
 - [`ezjson@1.4.0.0`](https://hub.bend-lang.com/n/ezjson) — ezjson: JSON for Bend 2, with a parser, a printer and a pull cursor [{'file': 'LICENSE', 'id': 'MIT'}]
-- [`ezmcp@0.1.0.0`](https://hub.bend-lang.com/n/ezmcp) — ezmcp: Model Context Protocol servers and clients for Bend 2, revisions [{'file': 'LICENSE', 'id': 'MIT'}]
+- [`ezmcp@0.3.0.0`](https://hub.bend-lang.com/n/ezmcp) — ezmcp: Model Context Protocol servers and clients for Bend 2, revisions [{'file': 'LICENSE', 'id': 'MIT'}]
 - [`ezsys@0.1.0.0`](https://hub.bend-lang.com/n/ezsys) — ezsys: system helpers for Bend 2: whole-file reads and atomic saves, [{'file': 'LICENSE', 'id': 'MIT'}]
-- [`ezx@1.13.0.0`](https://hub.bend-lang.com/n/ezx) — ezx: ez, the package manager for Bend 2. [{'file': 'LICENSE', 'id': 'MIT'}]
+- [`ezx@1.15.0.0`](https://hub.bend-lang.com/n/ezx) — ezx: ez, the package manager for Bend 2. [{'file': 'LICENSE', 'id': 'MIT'}]
 - [`gralha-bendquest@0.1.0.0`](https://hub.bend-lang.com/n/gralha-bendquest) — gralha-bendquest: the proof-carrying rules kernel of BendQuest, a [{'file': 'LICENSE', 'id': 'MIT'}]
 - [`gralha-byte-words@0.1.0.0`](https://hub.bend-lang.com/n/gralha-byte-words) — gralha-byte-words: bytes packed four to a U32 word, little-endian, in an [{'file': 'LICENSE', 'id': 'MIT'}]
 - [`gralha-bytes@0.1.0.1`](https://hub.bend-lang.com/n/gralha-bytes) — Bytes, bit streams, Huffman codes, DEFLATE/zlib, checksums, base64 and percent decoding. [{'file': 'LICENSE', 'id': 'MIT'}]
@@ -216,9 +233,11 @@ These have no name but carry descriptions worth knowing about. Import by content
 - [`0x04b9afdd6d6a56039c5ce6dfb1e55294`](https://hub.bend-lang.com/0x04b9afdd6d6a56039c5ce6dfb1e55294) — eztoml: the TOML slice for string-valued sectioned docs. A line is blank, a
 - [`0x05a6d0cd384bf4ebc144f0bc1b2d2350`](https://hub.bend-lang.com/0x05a6d0cd384bf4ebc144f0bc1b2d2350) — DEFLATE, gzip, and zlib decoding (RFC 1951, 1952, 1950) over byte strings. Source: https://github.com/paymog/bend-net/tree/main/zlib
 - [`0x07516e23611e5287ce89bcff661be83f`](https://hub.bend-lang.com/0x07516e23611e5287ce89bcff661be83f) — BendSR: Massively Parallel Symbolic Regression Engine in Bend
-- [`0x085b03c84ca37125e38dddede7b91e55`](https://hub.bend-lang.com/0x085b03c84ca37125e38dddede7b91e55) — shake: CLI argument parser for Bend 2. Describe a program with `app`, ``sub`
+- [`0x085b03c84ca37125e38dddede7b91e55`](https://hub.bend-lang.com/0x085b03c84ca37125e38dddede7b91e55) — shake: CLI argument parser for Bend 2. Describe a program with `app`, `sub`,
 - [`0x085d89db9ee8a21865e959816bb20e5b`](https://hub.bend-lang.com/0x085d89db9ee8a21865e959816bb20e5b) — List.append, List.reverse and List.length — the lemmas Base does not ship.
 - [`0x0a372da4a053652f70ded7d6e0d19330`](https://hub.bend-lang.com/0x0a372da4a053652f70ded7d6e0d19330) — ezhttp/b64: Base64 encoding for HTTP credentials (RFC 4648 §4). The
+- [`0x0d479d846e9ce92faa45a2346110fce8`](https://hub.bend-lang.com/0x0d479d846e9ce92faa45a2346110fce8) — Formal Proofs for the WhiteMagic & Mandala Governance Laws in Bend 2.
+- [`0x0e024c0379406f469e12da1d8267c06e`](https://hub.bend-lang.com/0x0e024c0379406f469e12da1d8267c06e) — Formal Proofs for the WhiteMagic & Mandala Governance Laws in Bend 2.
 - [`0x0f1da4e80677f1d50e6f638a7d6f27ef`](https://hub.bend-lang.com/0x0f1da4e80677f1d50e6f638a7d6f27ef) — bend-u64: package entry for BendHub.
 - [`0x103d0af04de36ab98b311e537366ec67`](https://hub.bend-lang.com/0x103d0af04de36ab98b311e537366ec67) — snap: run programs from Bend 2 with argv as a list of strings, no shell.
 - [`0x12ed1da25aa4f36622687d603aeb34e0`](https://hub.bend-lang.com/0x12ed1da25aa4f36622687d603aeb34e0) — Deque: a double-ended queue, as a front list and a reversed back list.
@@ -283,6 +302,7 @@ These have no name but carry descriptions worth knowing about. Import by content
 - [`0x99e32f5f97dad3791a32b01d133555c5`](https://hub.bend-lang.com/0x99e32f5f97dad3791a32b01d133555c5) — SPDX-License-Identifier: MIT-0
 - [`0x9abf4483e85cdd9418700acfbda3e5a0`](https://hub.bend-lang.com/0x9abf4483e85cdd9418700acfbda3e5a0) — ZIP archives read over Bytes: stored and DEFLATE entries, checked against their CRC-32 and sizes. Source: https://github.com/paymog/bend-kit/tree/main/archive
 - [`0x9bfd9d57916f3439316c2775fd1f10b4`](https://hub.bend-lang.com/0x9bfd9d57916f3439316c2775fd1f10b4) — snap: program runner for Bend 2. `run` (and `exec`) run a
+- [`0x9c00036bcd9556a4ab0f442a1bdecc28`](https://hub.bend-lang.com/0x9c00036bcd9556a4ab0f442a1bdecc28) — Big naturals with Montgomery arithmetic; IEEE 754 binary64 in software; correctly rounded exp, log, sin, cos, tan. Apache-2.0. Source: https://github.com/jonasporto/element-bend-libs/tree/main/packages/element-math
 - [`0x9c94dd62a275a2a52aba6d0315b7bb60`](https://hub.bend-lang.com/0x9c94dd62a275a2a52aba6d0315b7bb60) — bend-sendfile: package entry for BendHub.
 - [`0x9eff48008b00051424f986458d3db328`](https://hub.bend-lang.com/0x9eff48008b00051424f986458d3db328) — probe 2896 harmless; no code
 - [`0x9f15483a7cabc6e91e5092cc41829c43`](https://hub.bend-lang.com/0x9f15483a7cabc6e91e5092cc41829c43) — bend-i64: a SIGNED 64-bit integer in pure Bend, two's complement over Word(64n).
@@ -324,6 +344,7 @@ These have no name but carry descriptions worth knowing about. Import by content
 - [`0xe01785b64266bf3ba0068183b9f9f5e3`](https://hub.bend-lang.com/0xe01785b64266bf3ba0068183b9f9f5e3) — DEFLATE, gzip, and zlib decoding (RFC 1951, 1952, 1950) over byte strings. Source: https://github.com/paymog/bend-kit/tree/main/zlib
 - [`0xe160436f9c54f3dba1bd01de3117931e`](https://hub.bend-lang.com/0xe160436f9c54f3dba1bd01de3117931e) — Match an HTTP method and path to a handler. Source: https://github.com/paymog/bend-net/tree/main/router
 - [`0xe6b82fa6c4c459c7023adf4b12a3ac46`](https://hub.bend-lang.com/0xe6b82fa6c4c459c7023adf4b12a3ac46) — LAWS.bend -- the laws of tinygrad, stated for the Bend port.
+- [`0xe7cbe6684dd31616b6b8e2f83096a120`](https://hub.bend-lang.com/0xe7cbe6684dd31616b6b8e2f83096a120) — Formal Proofs for the WhiteMagic & Mandala Governance Laws in Bend 2.
 - [`0xe91e783c63981e14b05dcd524cc215be`](https://hub.bend-lang.com/0xe91e783c63981e14b05dcd524cc215be) — Deque — foundational two-list double-ended queue for Bend.
 - [`0xea8f96f102b76dde4994886007251d17`](https://hub.bend-lang.com/0xea8f96f102b76dde4994886007251d17) — HTTP/1.1 client for http and https, with DNS and TLS.
 - [`0xeb25eff332574f4f1d48668b83cdda30`](https://hub.bend-lang.com/0xeb25eff332574f4f1d48668b83cdda30) — bend-osdev-asn1: every file of the package, so that bend --publish sends
@@ -343,5 +364,5 @@ These have no name but carry descriptions worth knowing about. Import by content
 - [`0xff0c68fa4ce715b1f30ee5944192f0b7`](https://hub.bend-lang.com/0xff0c68fa4ce715b1f30ee5944192f0b7) — Definitional laws for Crc32's Base-only List<&2, U32> API.
 
 ---
-*Generated 2026-11-02 from the BendHub `packages.json` API. See the [README](README.md) for the curated overview.*
+*Generated 2026-11-09 from the BendHub `packages.json` API. See the [README](README.md) for the curated overview.*
 
